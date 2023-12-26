@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('../font/Sans\ a4fran3.woff')format('woff'),
+    url('../font/Sans\ a4fran3.eot')format('eot')
+    url('../font/Sans\ a4fran3.ttf')format('ttf'),
+    url('../font/IRANSans.woff2')format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    font-family: 'iransans';
+    direction: rtl;
+}
+.hamburger-icon{
+    display: none;
+}
+.header1{
+    width: 100%;
+    display: flex;
+    background-color: #ffc30f;
+}
+.header1 .header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1 .header-top .welcome h5{
+    color: #900c3f;
+}
+.header1 .header-top .contact p{
+    color: #900c3f;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: rgb(0, 0, 0,.09);
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+header .navbar-nav .nav-link{
+    padding: 20px 10px;
+    color: #900c3f;
+    font-size: 15px;
+    font-weight: 700;
+}
+header .navbar-nav .nav-link:hover{
+    color:#c70039;
+}
+header .navbar .navbar-social{
+    display: flex;
+    flex-direction: row;
+}
+header .navbar .navbar-social a svg{
+    width: 22px;
+    height: 22px;
+    color: #900c3f;
+    padding: 10px;
+}
+header .navbar .navbar-social a svg:hover{
+    color:#c70039;
+}
+header .navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar .logo p{
+    font-size: 14px;  
+    font-weight: bold;
+    color: #900c3f;  
+}
+header .navbar .logo img{
+    border-radius: 25px;
+}
+
+/* for hamburger icon */
+.sidepanel{
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    height:100vh;
+    top: 0;
+    right:0;
+    background-color:rgb(0, 0, 0,.5);
+    overflow-x: hidden;
+    padding-top: 78px;
+    transition: .5s ease-in;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffc30f;
+    margin-top: 15px;
+}
+.closebtn:hover{
+    color:#c70039;
+}
+.another-respon{
+    width: 100%;
+    height: 50px;
+    background-color:#900c3f;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px !important;
+    display: block;
+    transition: 1s;
+    padding-top: 12px;
+}
+.another-respon p{
+    color:darkgray;
+}
+.another-respon p:hover{
+    color: #c70039;
+}
+/* finish */
+
+
+@media(max-width:992px){
+    .hamburger-icon{
+        display: block;
+        color: #900c3f;
+        cursor: pointer;
+    }
+    .hamburger-icon:hover{
+        color: #c70039;
+    }
+    .hamburger-icon svg{
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+    header .navbar-nav .nav-link{
+        display: none;
+    }
+    header .navbar .logo img{
+        display: none;
+    }
+    header .navbar .logo p{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .welcome h5{
+        font-size: 13px;
+    }
+    .contact p{
+        font-size: 13px;
+    }
+    .another-respon p{
+        font-size: 14px;
+    }
+    .sidepanel{
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:576px){
+    .welcome h5{
+        font-size: 8px;
+    }
+    .contact p{
+        font-size: 10px;
+    }
+}

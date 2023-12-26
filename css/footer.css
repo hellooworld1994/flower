@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'iransans';
+    src: url('../font/Sans\ a4fran3.woff')format('woff'),
+    url('../font/Sans\ a4fran3.eot')format('eot')
+    url('../font/Sans\ a4fran3.ttf')format('ttf'),
+    url('../font/IRANSans.woff2')format('woff2');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    font-family: 'iransans';
+    direction: rtl;
+}
+
+.space-between{
+    height: 5px;
+    width: 100%;
+    background-color: #c70039;
+}
+footer{
+    width: 100%;
+    background-color: #581845;
+}
+
+/* about us*/
+.footer-describtion{
+    margin-top: 20px;
+    margin-bottom: 30px;
+ }
+ #footer-title{
+     color: darkgray;
+     margin-bottom: 10px;
+ }
+ .footer-describtion p{
+     color: darkgray;
+     text-align: right;
+     font-size: 12px;
+     line-height: 35px;
+ }
+ .footer-describtion p a{
+     color:darkgray;
+ }
+ .footer-describtion p a:hover{
+     color:#c70039;
+ }
+ /* finish */
+
+
+ /* three table */
+.table{
+    height: 200px;
+    margin-top: 20px;
+}
+.table h4{
+    font-size: 16px;
+}
+.p-table{
+    height: 50px;
+    font-size: 12px;
+    color:darkgray;
+}
+.p-table a{
+    color: darkgray;
+}
+.p-table a:hover{
+    color:#c70039;
+}
+/* finish */
+
+
+/*enmad */
+.nemad{
+    height: 100px;
+    background-color: #900c3f;
+    margin: 20px 20px;
+    border-radius:25px 0 25px 0;
+    cursor: pointer;
+}
+.samandehi{
+    height: 100px;
+    background-color: #900c3f;
+    margin-top: 20px;
+    border-radius:25px 0 25px 0;
+    cursor: pointer;
+}
+.nemad img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.samandehi img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* news section */
+.news{
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #900c3f;
+    border-radius:25px 0 25px 0;
+    margin: 20px 20px;
+}
+.news h4{
+    color: darkgray;
+}
+.news h4 span p{
+    font-size: 11px;
+    font-weight: 100;
+    padding-left: 20px;
+}
+.news form input{
+    padding: 10px 2px;
+    border:1px solid darkgray;
+    border-radius:10px 0 10px 0;
+    background-color: #900c3f;
+    color: darkgray;
+    font-size: 16px;
+    letter-spacing: 1px;
+   
+}
+.news form input::placeholder{
+    color:darkgray;
+}
+.news form button{
+    padding: 10px;
+    border:1px solid darkgray;
+    border-radius:10px 0 10px 0;
+    background-color: #900c3f;
+    color: darkgray;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* social media */
+.copyright{
+    font-size: 12px;
+    color: darkgray;
+    direction: ltr;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 22px 0;
+}
+.social{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.social li a svg{
+    width: 25px;
+    height: 25px;
+    color: darkgray;
+    padding: 15px;
+}
+.social li a svg:hover{
+    color: #c70039;
+}
+
+@media(max-width:768px){
+    .news h4 span p{
+        display: none;
+    }
+    .news form button{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:576px){
+    .news form input{
+        padding: 10px 2px;
+        font-size: 15px;
+    }
+    
+    .nemad{
+        margin: 20px 10px;
+        
+    }
+    .news{
+        margin: 20px 10px;    
+    }
+}
